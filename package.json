@@ -1,0 +1,22 @@
+{
+  "name": "playwright-with-cicd-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviranaviv/playwright-with-cicd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aviranaviv/playwright-with-cicd/issues"
+  },
+  "homepage": "https://github.com/aviranaviv/playwright-with-cicd#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.30"
+  }
+}
