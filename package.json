@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "allure-reports": "allure serve allure-results",
+    "test": "npx playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aviranaviv/playwright-with-cicd.git"
@@ -18,6 +21,8 @@
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.30",
-    "allure-playwright": "^3.2.2"
+    "allure-playwright": "^3.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
