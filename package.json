@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "allure-reports": "allure serve allure-results",
     "test": "npx playwright test"
