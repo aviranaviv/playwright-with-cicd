@@ -28,7 +28,7 @@ jobs:
         run: npx playwright test || true  # Continue even if tests fail
 
       - name: Generate custom HTML report
-        run: npx ts-node .github/generate-report.ts
+        run: npx ts-node --loader ts-node/esm .github/generate-report.ts
 
       - name: Upload Playwright default report
         if: ${{ !cancelled() }}
