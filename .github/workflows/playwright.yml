@@ -25,13 +25,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test || true
-
-      - name: Create dummy test results
-        run: echo "test" > results.json
-
-      - name: Generate custom HTML report
-        run: npx tsx .github/generate-report.ts
+        run: npx playwright test || true  # Continue even if tests fail
 
       - name: Upload Playwright default report
         if: ${{ !cancelled() }}
